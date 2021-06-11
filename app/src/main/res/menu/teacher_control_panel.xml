@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Student_Details"
+            android:icon="@drawable/student_details_icon"
+            android:title="Student details"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/print_sem"
+            android:icon="@drawable/print_icon"
+            android:title="Print Sheet"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/Reset"
+            android:icon="@drawable/restart"
+            android:title="Reset Attendance"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/conducted_attendance"
+            android:icon="@drawable/counducted_attendance_icon"
+            android:title="Conducted Attendance"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/add_teacher_id"
+            android:icon="@drawable/add_teacher_id_icon"
+            android:title="Add Teacher Id"
+            app:showAsAction="ifRoom" />
+
+
+
+
+    </group>
+
+
+</menu>

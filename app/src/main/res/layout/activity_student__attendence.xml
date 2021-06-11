@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:background="@color/black"
+    tools:context=".student_Attendence">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+
+        android:id="@+id/fab_button"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:elevation="1dp"
+        android:onClick="fab_Button"
+        android:scaleType="fitXY"
+        android:src="@drawable/fab_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <ImageButton
+
+        android:id="@+id/fab_present"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:elevation="1dp"
+        android:onClick="fab_Present"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fab_present_foreground"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <ImageButton
+
+        android:id="@+id/fab_absent"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:elevation="1dp"
+        android:onClick="fab_Absent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fab_absent_foreground"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <ImageButton
+
+        android:id="@+id/fab_cancel"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:elevation="1dp"
+        android:onClick="fab_Cancel"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fab_cancel_foreground"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler"
+        app:layout_constraintVertical_bias="0.86" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">#000000</item>
+
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <item name="itemTextColor">#ffffff</item>
+        <item name="itemIconTint">#ffffff</item>
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorControlHighlight">#3C4042</item>
+        <item name="android:shape">rectangle</item>
+        <item name="android:radius">10dp</item>
+
+
+    </style>
+
+    <style name="ListView" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/dark_grey</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="itemTextColor">#ffffff</item>
+        <item name="selectableItemBackground">@color/white</item>
+    </style>
+
+</resources>

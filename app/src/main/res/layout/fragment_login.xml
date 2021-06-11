@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="406dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/border_layout"
+        >
+
+
+        <EditText
+            android:id="@+id/login_id"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/et_border"
+            android:drawableStart="@drawable/et_person"
+            android:drawableLeft="@drawable/et_person"
+            android:drawablePadding="9dp"
+            android:hint="College id"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/et_border"
+            android:drawableStart="@drawable/et_password"
+            android:drawableLeft="@drawable/et_password"
+            android:drawablePadding="7dp"
+            android:hint="Password "
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/bt_border"
+            android:onClick="Submit"
+            android:text="Submit"
+            android:textColor="#ffff33"
+            tools:ignore="OnClick" />
+       <!-- <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/login_secure_foreground" />-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:lottie_rawRes="@raw/user_secure1"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_speed="1.0"
+            android:layout_marginTop="0dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
